@@ -2,6 +2,13 @@
   //   key: 'X-Frame-Options',
   //   value: 'SAMEORIGIN',
   // },
+
+  // also added
+  // { key: "Access-Control-Allow-Credentials", value: "true" },
+  //         { key: "Access-Control-Allow-Origin", value: "*" },
+  //         { key: "Access-Control-Allow-Methods", value: "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
+  //         { key: "Access-Control-Allow-Headers", value: "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" },
+        
   
   const securityHeaders = [
   {
@@ -11,10 +18,6 @@
   {
     key: 'Strict-Transport-Security',
     value: 'max-age=63072000; includeSubDomains; preload',
-  },
-  {
-    key: 'X-Frame-Options',
-    value: 'SAMEORIGIN',
   },
   {
     key: 'Content-Security-Policy',
@@ -32,6 +35,11 @@
     key: 'Referrer-Policy',
     value: 'no-referrer',
   },
+  { key: "Access-Control-Allow-Credentials", value: "true" },
+          { key: "Access-Control-Allow-Origin", value: "*" },
+          { key: "Access-Control-Allow-Methods", value: "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
+          { key: "Access-Control-Allow-Headers", value: "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" },
+        
 ];
 
 module.exports = async () => {
