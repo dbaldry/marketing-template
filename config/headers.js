@@ -37,7 +37,7 @@
   },
   {
       key: 'X-Frame-Options',
-      value: false,
+      value: 'false',
     },
   { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
